@@ -2,7 +2,7 @@ import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 import { FooterComponent } from "@earendil-works/pi-coding-agent";
 import { Editor, visibleWidth } from "@earendil-works/pi-tui";
 
-// Colori duplicati da themes/tenzo.json — tenere in sync
+// Colors duplicated from themes/tenzo.json — keep in sync
 const BG = "\x1b[48;2;51;51;54m"; // ink1 #333336
 const RESET_BG = "\x1b[49m";
 const FULL_RESET = "\x1b[0m";
