@@ -1,63 +1,64 @@
-# pi-tenzo
+# Tenzo
+
+A calm ink-and-tea theme for the [pi](https://pi.dev) coding agent.
 
 ![Tenzo theme](screenshots/screenshot-tenzo.png)
 
-A theme for [pi](https://pi.dev) designed around the real terminal, not someone else's screenshots.
+## Try it
 
-Base assumptions (measured, not inheritable from the theme):
+Run pi with the theme for this session only:
 
-- terminal canvas: `#282c34` (Ghostty default) — pi doesn't paint the background
-- body text: terminal foreground (`#ffffff` default) — pi doesn't color it
-- the input border indicates the thinking level: the scale here runs from gray to ember red, no magenta
+```
+pi -e npm:@jnardiello/pi-tenzo-theme
+```
 
-Palette: cool "ink" base matching the canvas, **tea** accent `#d7a65f`, **matcha** successes `#97b979`, clay errors `#dd6b6b`.
-
-## Installation
-
-Install from npm:
+Like it? Install it permanently:
 
 ```
 pi install npm:@jnardiello/pi-tenzo-theme
 ```
 
-Alternatively, install as a pi package from the git source:
+Then pick the `tenzo` theme with `/settings`, or set `"theme": "tenzo"` in
+`~/.pi/agent/settings.json`.
+
+## What you get
+
+A cool ink base over a dark canvas, warmed up by a single accent:
+
+- `#e8944e` amber accent — headings, links, mode labels
+- `#a3b370` moss green — success, diff additions, strings
+- `#d9705c` clay red — errors, diff removals, numbers
+- thinking levels climb from muted gray `#6e685c` (off) to ember red `#d9503c` (max), no bright magenta anywhere
+
+The bundled **Tenzo UI** extension paints the editor a matching ink background
+and border, and colors the thinking-level label in the footer to match the
+scale above.
+
+## Works best with
+
+Tenzo is drawn against a dark canvas (Ghostty's default `#282c34`). Pi leaves
+your terminal background and foreground untouched, so the theme looks right
+on a dark terminal scheme with the default foreground — and off otherwise.
+
+## Install from git or locally
+
+From the git source:
 
 ```
 pi install git:github.com/jnardiello/pi-tenzo
 ```
 
-From the local folder (for development: the path is added to the settings without
-copying anything):
+Local folder (for development; the path is added to settings without copying
+anything):
 
 ```
 pi install /path/to/pi-tenzo
 ```
 
-To try the package without installing it (current run only), use pi's `-e` flag —
-it installs into a temporary directory instead of writing the settings:
-
-```
-pi -e /path/to/pi-tenzo
-```
-
-### Selecting the theme
-
-After installation, select the theme with `"theme": "tenzo"` in
-`~/.pi/agent/settings.json`, or with the `/settings` command.
-
-### Uninstalling
-
-If installed from npm:
+## Uninstall
 
 ```
 pi remove npm:@jnardiello/pi-tenzo-theme
 ```
 
-If installed from git:
-
-```
-pi remove git:github.com/jnardiello/pi-tenzo
-```
-
-(alternatively, remove the entry from the `packages` list in
-`~/.pi/agent/settings.json`).
+Or remove the entry from the `packages` list in `~/.pi/agent/settings.json`.
