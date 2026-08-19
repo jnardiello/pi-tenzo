@@ -14,7 +14,13 @@ Palette: cool "ink" base matching the canvas, **tea** accent `#d7a65f`, **matcha
 
 ## Installation
 
-Install as a pi package from the git source:
+Install from npm:
+
+```
+pi install npm:@jnardiello/pi-tenzo-theme
+```
+
+Alternatively, install as a pi package from the git source:
 
 ```
 pi install git:github.com/jnardiello/pi-tenzo
@@ -40,6 +46,14 @@ After installation, select the theme with `"theme": "tenzo"` in
 `~/.pi/agent/settings.json`, or with the `/settings` command.
 
 ### Uninstalling
+
+If installed from npm:
+
+```
+pi remove npm:@jnardiello/pi-tenzo-theme
+```
+
+If installed from git:
 
 ```
 pi remove git:github.com/jnardiello/pi-tenzo

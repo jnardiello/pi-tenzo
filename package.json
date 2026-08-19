@@ -1,8 +1,7 @@
 {
-  "name": "pi-tenzo",
+  "name": "@jnardiello/pi-tenzo-theme",
   "version": "0.1.0",
   "type": "module",
-  "private": true,
   "description": "Tenzo theme for the pi coding agent — calm ink-and-tea palette designed for the Ghostty default canvas.",
   "license": "MIT",
   "keywords": ["pi-package", "pi-theme", "pi", "tenzo"],
