@@ -8,7 +8,8 @@
   "repository": "github:jnardiello/pi-tenzo",
   "pi": {
     "themes": ["./themes/tenzo.json"],
-    "extensions": ["./extensions/tenzo-ui.ts"]
+    "extensions": ["./extensions/tenzo-ui.ts"],
+    "image": "https://raw.githubusercontent.com/jnardiello/pi-tenzo/master/screenshots/screenshot-tenzo.png"
   },
   "files": ["themes", "extensions", "README.md"],
   "peerDependencies": {
