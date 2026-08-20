@@ -1,6 +1,6 @@
 # Tenzo
 
-A calm ink-and-tea theme for the [pi](https://pi.dev) coding agent.
+A minimal ink-and-tea theme for the [pi](https://pi.dev) coding agent.
 
 ![Tenzo theme](screenshots/screenshot-tenzo.png)
 
